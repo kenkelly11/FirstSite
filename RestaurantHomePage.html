@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+	Name: Kendall Grace Kelly
+	Date Created: June 21st 2021
+	Most Recent Revision: August 4th 2021
+-->
+	<html lang="en">
+		<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" 
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+			crossorigin="anonymous">
+		<link href="RestaurantStyles.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+			
+			<title>Cafe Amarillo</title>
+		<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Note:</strong> This site performs best with JavaScript enabled. Please enable JavaScript on your device.
+</div>
+			<style>
+				img 	{
+						float: left;
+						}
+				.description 	{
+								float: left;
+								}
+				.slideshow-container	{
+				background-color: yellow;
+				}
+				
+					
+					
+			</style>
+		</head>
+		<body>
+			<header class="jumbotron">
+				<h1> CAFE AMARILLO </h1>
+				<h4 class="text-right">Celebrating the Grand Opening of a brand new location!</h4>
+			</header>
+<div class="slideshow-container">
+<div id="slide1">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <style="width:100%">
+  <div class="text">Our Drink of the Month is SG Special Brew!</div>
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <style="width:100%">
+  <div class="text">Our Seasonal Menu is now available!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <style="width:100%">
+  <div class="text">Our Brand New location is located at 415 Theremin Court!</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+			
+			<nav>
+				<a class="btn" href="RestaurantHomePage.html">Home <i class="fas fa-house-damage"></i></a>
+				<a class="btn" href="RestaurantMenuPage.html">Menu <i class="fas fa-coffee"></i></a>
+				<a class="btn" href="RestaurantContactPage.html">Contact <i class="far fa-comment"></i></a>
+			</nav>
+			
+			<img src="yellowbuilding.jpg" alt="Yellow Building" width="35%" />
+			<article class="description">
+				<strong>Welcome to <em>Cafe Amarillo</em>, the coffee shop-stop for all your caffeine and catering needs! 
+				The idea for a yellow-themed cafe started in my fiance's hometown of Key West, where we were lucky enough to set up and settle down. 
+				Our mutual love of the color yellow paired with pride for his Cuban ancestry brought us to the name and theme <em>Amarillo</em>.
+				Stop in today to get your hands on one of our signature yellow lattes with a flavoring of your choice.
+				Or, if coffee isn't for you, try any one of our made-fresh-every-morning bakery items! 
+				If you're coming in on your lunch break, we've got just the thing to satisfy your hunger pangs: sandwiches, soups, salads, and more!</strong>
+			</article>
+		</body>
+		
+<footer>
+				<p>Located at: 6069 Mariposa Avenue, Key West, FL 33040</p>
+				<p>Contact Us: (330) 377-7376</p>
+
+</footer>
+
+			
+			
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	</html>
+	
